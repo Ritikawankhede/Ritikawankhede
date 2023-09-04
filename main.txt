@@ -1,0 +1,97 @@
+
+UseR@DESKTOP-PJ5MRT1 MINGW64 ~/Desktop/gitpush (master)
+$ ls
+main.txt
+
+UseR@DESKTOP-PJ5MRT1 MINGW64 ~/Desktop/gitpush (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   main.txt
+
+
+UseR@DESKTOP-PJ5MRT1 MINGW64 ~/Desktop/gitpush (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/UseR/Desktop/gitpush/.git/
+
+UseR@DESKTOP-PJ5MRT1 MINGW64 ~/Desktop/gitpush (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   main.txt
+
+
+UseR@DESKTOP-PJ5MRT1 MINGW64 ~/Desktop/gitpush (master)
+$ git add main.txt
+
+UseR@DESKTOP-PJ5MRT1 MINGW64 ~/Desktop/gitpush (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   main.txt
+
+
+UseR@DESKTOP-PJ5MRT1 MINGW64 ~/Desktop/gitpush (master)
+$ git config --global user.name "ritika"
+
+UseR@DESKTOP-PJ5MRT1 MINGW64 ~/Desktop/gitpush (master)
+$ git config --global user.email "ritika@gmail.com"
+
+UseR@DESKTOP-PJ5MRT1 MINGW64 ~/Desktop/gitpush (master)
+$ git commit -m "commiting main .txt file "
+[master (root-commit) 4923ecd] commiting main .txt file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 main.txt
+
+UseR@DESKTOP-PJ5MRT1 MINGW64 ~/Desktop/gitpush (master)
+$ git log
+commit 4923ecd45fe2760944185450c47ab0ff448c8292 (HEAD -> master)
+Author: ritika <ritika@gmail.com>
+Date:   Thu Aug 31 15:08:06 2023 +0530
+
+    commiting main .txt file
+
+UseR@DESKTOP-PJ5MRT1 MINGW64 ~/Desktop/gitpush (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+UseR@DESKTOP-PJ5MRT1 MINGW64 ~/Desktop/gitpush (master)
+$ ^[[200~git remote add origin https://github.com/Ritikawankhede/Ritikawankhede.git
+bash: $'\E[200~git': command not found
+
+UseR@DESKTOP-PJ5MRT1 MINGW64 ~/Desktop/gitpush (master)
+$ git remote add origin https://github.com/Ritikawankhede/Ritikawankhede.git
+
+UseR@DESKTOP-PJ5MRT1 MINGW64 ~/Desktop/gitpush (master)
+$ git remote -v
+origin  https://github.com/Ritikawankhede/Ritikawankhede.git (fetch)
+origin  https://github.com/Ritikawankhede/Ritikawankhede.git (push)
+
+UseR@DESKTOP-PJ5MRT1 MINGW64 ~/Desktop/gitpush (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 210 bytes | 105.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Ritikawankhede/Ritikawankhede.git
+ * [new branch]      master -> master
+
+UseR@DESKTOP-PJ5MRT1 MINGW64 ~/Desktop/gitpush (master)
+$ git push origin master
+Everything up-to-date
+
+UseR@DESKTOP-PJ5MRT1 MINGW64 ~/Desktop/gitpush (master)
+$
